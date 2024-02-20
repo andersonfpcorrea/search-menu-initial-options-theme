@@ -19,15 +19,6 @@
           @searchTermChanged={{@searchTermChanged}}
           @suggestionKeyword={{this.contextTypeKeyword}}
         />
-        <SearchMenu::Results::AssistantItem
-          @suffix="search in Viasat Articles"
-          @tag="article"
-          @closeSearchMenu={{@closeSearchMenu}}
-          @searchAllTopics={{true}}
-          @extraHint={{true}}
-          @searchTermChanged={{@searchTermChanged}}
-          @suggestionKeyword={{this.contextTypeKeyword}}
-        />
       {{/if}}
 
       {{#if this.search.searchContext}}
