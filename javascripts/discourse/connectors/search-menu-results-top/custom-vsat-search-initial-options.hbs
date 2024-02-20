@@ -10,10 +10,3 @@
     @suffix={{"Search in Viasat Help Articles"}}
   />
 {{/if}}
-{{#if (and (not @searchTopics) (not @inPMInboxContext))}}
-  {{! render the first couple suggestions before a search has been performed}}
-  <SearchMenu::Results::InitialOptions
-    @closeSearchMenu={{@closeSearchMenu}}
-    @searchTermChanged={{@searchTermChanged}}
-  />
-{{/if}}
