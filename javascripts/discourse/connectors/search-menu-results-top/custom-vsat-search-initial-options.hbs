@@ -1,21 +1,7 @@
 {{log @outletArgs}}
-{{#if this.renderInitialOptions}}
-  <div id="custom-vsat-init-options-1">
-    <SearchMenu::Results::InitialOptions
-      @closeSearchMenu={{@closeSearchMenu}}
-      @searchTermChanged={{@searchTermChanged}}
-    />
-  </div>
-  <div id="custom-vsat-init-options-2">
-    <SearchMenu::Results::InitialOptions
-      @closeSearchMenu={{@closeSearchMenu}}
-      @searchTermChanged={{@searchTermChanged}}
-    />
-  </div>
-{{/if}}
 {{#if (and (not @searchTopics) (not @inPMInboxContext))}}
   {{! render the first couple suggestions before a search has been performed}}
-  <div id="custom-vsat-init-options-3">
+  <div id="custom-vsat-init-options">
     <SearchMenu::Results::InitialOptions
       @closeSearchMenu={{@closeSearchMenu}}
       @searchTermChanged={{@searchTermChanged}}
