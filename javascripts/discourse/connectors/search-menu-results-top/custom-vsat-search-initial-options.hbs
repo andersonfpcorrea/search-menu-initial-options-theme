@@ -17,7 +17,7 @@
   />
 {{else}}
   {{#if (and (not @searchTopics) (not @inPMInboxContext))}}
-    <div id="#custom-vsat-init-options">
+    <div id="custom-vsat-init-options">
       {{! render the first couple suggestions before a search has been performed}}
       <SearchMenu::Results::InitialOptions
         @closeSearchMenu={{@closeSearchMenu}}
