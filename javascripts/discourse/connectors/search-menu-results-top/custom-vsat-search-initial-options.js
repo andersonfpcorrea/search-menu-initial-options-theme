@@ -1,7 +1,7 @@
 import Component from "@glimmer/component";
 
-export default class BrandOfficialTopics extends Component {
+export default class CustomVsatSearchInitialOptions extends Component {
   constructor() {
-    console.log({ siteSettings: this.siteSettings });
+    console.log("Hello, world");
   }
 }
