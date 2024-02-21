@@ -1,8 +1,9 @@
 import Component from "@glimmer/component";
 
 export default class CustomVsatSearchInitialOptions extends Component {
-  static didRender() {
-    this._super(...arguments);
+  constructor() {
+    super();
+    console.log("HHHHHHHHHHHHHEy");
     const inputSearch = document.querySelector("#search-term");
     console.log({ inputSearch });
     inputSearch.addEventListener("change", (e) => {
