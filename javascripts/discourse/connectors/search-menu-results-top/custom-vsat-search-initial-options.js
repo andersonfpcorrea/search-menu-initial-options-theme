@@ -1,4 +1,5 @@
 import Component from "@glimmer/component";
+import { action } from "@ember/object";
 
 export default class CustomVsatSearchInitialOptions extends Component {
   constructor() {
@@ -21,5 +22,10 @@ export default class CustomVsatSearchInitialOptions extends Component {
         location.href = `https://www.forum.test.viasat.com/docs?search=${query}&tag=article`;
       });
     });
+  }
+
+  @action
+  onClick() {
+    console.log("BOOM");
   }
 }
