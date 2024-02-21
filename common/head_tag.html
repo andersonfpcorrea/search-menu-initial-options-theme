@@ -12,7 +12,7 @@
     await wait(5000)
     const inputSearch = document.querySelector("#search-term");
     console.log({ inputSearch });
-    inputSearch.addEventListener("change", (e) => {
+    inputSearch.addEventListener("keydown", (e) => {
       console.log({ e });
       console.log(e.target.value);
       const el = document.querySelector("#custom-vsat-init-options");
