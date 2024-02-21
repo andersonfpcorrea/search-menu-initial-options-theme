@@ -1,6 +1,15 @@
 <script type="text/discourse-plugin" version="0.8.13" defer>
-  window.onload = () => {
+  async function wait(ms) {
+    return new Promise(res => {
+      setTimeout(() => {
+        res()
+      }, ms);
+    })
+  }
+
+  window.onload = async () => {
     console.log("HHHHHHHHHHHHHEy");
+    await wait(5000)
     const inputSearch = document.querySelector("#search-term");
     console.log({ inputSearch });
     inputSearch.addEventListener("change", (e) => {
