@@ -6,7 +6,7 @@ export default class CustomVsatSearchInitialOptions extends Component {
     console.log("HHHHHHHHHHHHHEy");
     const inputSearch = document.querySelector("#search-term");
     console.log({ inputSearch });
-    inputSearch.addEventListener("change", (e) => {
+    inputSearch.addEventListener("onkeydown", (e) => {
       console.log({ e });
       if (e.target.value.length > 2) {
         const el = document.querySelector("#custom-vsat-init-options");
