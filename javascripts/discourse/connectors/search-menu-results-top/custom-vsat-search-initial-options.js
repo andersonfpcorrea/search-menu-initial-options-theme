@@ -4,7 +4,8 @@ export default class CustomVsatSearchInitialOptions extends Component {
   constructor() {
     super();
     const inputSearch = document.querySelector("#search-term");
-    inputSearch.addEventListener("input", () => {
+    inputSearch.addEventListener("change", (e) => {
+      console.log(e);
       const el = document.querySelector("#custom-vsat-init-options");
       const labelEl = el?.querySelector("span.label-suffix");
       if (labelEl) labelEl.innerText = "in Viasat Help Articles";
